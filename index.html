@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hirovo Uygulama Açılıyor...</title>
+    <script>
+        const jobId = new URLSearchParams(window.location.search).get("id");
+
+        if (jobId) {
+            // Deep link çağır
+            window.location.href = `hirovo://jobs/${jobId}`;
+
+            // Uygulama yoksa mağazaya yönlendir (3 saniye sonra)
+            setTimeout(() => {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.madentechnology.hirovomobilapp";
+            }, 3000);
+        } else {
+            document.body.innerText = "Geçersiz bağlantı.";
+        }
+    </script>
+</head>
+
+<body>
+    Uygulama açılıyor, lütfen bekleyin...
+</body>
+
+</html>
