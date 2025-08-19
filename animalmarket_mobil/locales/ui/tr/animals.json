@@ -1,0 +1,19 @@
+{
+    "allAnimals": "Tüm Hayvanlar",
+    "totalAnimals": "hayvan",
+    "noAnimals": "Hayvan Bulunamadı",
+    "noAnimalsDescription": "Şu anda satışta hayvan bulunmuyor. Daha sonra tekrar kontrol edin.",
+    "characteristics": "Hayvan Özellikleri",
+    "gender": "Cinsiyet",
+    "age": "Yaş",
+    "weight": "Ağırlık",
+    "healthStatus": "Sağlık Durumu",
+    "description": "Açıklama",
+    "location": "Konum",
+    "farmInfo": "Çiftlik Bilgileri",
+    "viewFarm": "Çiftliği Görüntüle",
+    "placeBid": "Teklif Ver",
+    "makeOffer": "Teklif Yap",
+    "contactSeller": "Satıcı ile İletişim",
+    "activeBids": "aktif teklif"
+}

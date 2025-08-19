@@ -1,0 +1,22 @@
+{
+    "loading": "Yükleniyor...",
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "editProfile": "Profilimi Düzenle",
+    "logout": "Çıkış Yap",
+    "retry": "Tekrar Dene",
+    "negotiable": "Pazarlık",
+    "showOnMap": "Haritada Göster",
+    "years": "yıl",
+    "months": "ay",
+    "home": "Ana Sayfa",
+    "animals": "Hayvanlar",
+    "farms": "Çiftlikler",
+    "myOffers": "Tekliflerim",
+    "changePassword": "Şifre Değiştir",
+    "error": {
+        "general": "Bir hata oluştu",
+        "title": "Hata",
+        "notFound": "Bulunamadı"
+    }
+}

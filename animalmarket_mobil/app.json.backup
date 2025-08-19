@@ -1,0 +1,125 @@
+{
+  "expo": {
+    "name": "Hirovo",
+    "slug": "hirovo-mobil",
+    "owner": "mstfa6060",
+    "scheme": "hirovo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/hirovo-logo-icon-gradient-1024.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/hirovo-logo-icon-gradient-1024.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1D4ED8"
+    },
+    "android": {
+      "package": "com.madentechnology.hirovomobilappv2",
+      "versionCode": 7,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/hirovo-logo-icon-gradient-1024.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": {
+            "scheme": "https",
+            "host": "hirovo.page.link"
+          },
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        },
+        {
+          "action": "VIEW",
+          "data": {
+            "scheme": "hirovo",
+            "host": "*"
+          },
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "runtimeVersion": "1.0.1"
+    },
+    "ios": {
+      "bundleIdentifier": "com.madentechnology.hirovomobilappv2",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "remote-notification",
+          "remote-notification"
+        ],
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "entitlements": {
+        "aps-environment": "development",
+        "com.apple.security.application-groups": [
+          "group.com.madentechnology.hirovomobilappv2.onesignal",
+          "group.com.madentechnology.hirovomobilappv2.onesignal"
+        ]
+      },
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/2122db4d-ba6e-4881-9d43-a8ee5d32a8e3"
+    },
+    "extra": {
+      "oneSignalAppId": "d22118fa-f46c-496a-8ac9-34f2a8de29a1",
+      "googleAndroidClientId": "88926208060-grg2h3ium7g5jaqbvugr4bq64hs6e5q3.apps.googleusercontent.com",
+      "googleWebClientId": "88926208060-9mrke9kitb6qfms46had13830ma1kr7l.apps.googleusercontent.com",
+      "eas": {
+        "projectId": "2122db4d-ba6e-4881-9d43-a8ee5d32a8e3"
+      }
+    },
+    "plugins": [
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.88926208060-det9u39oljigc6l96j1qn9lqt4em4bh6"
+        }
+      ],
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "development"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "googleServicesFile": "./google-services.json"
+          }
+        }
+      ],
+      "expo-localization",
+      "expo-web-browser",
+      "expo-secure-store",
+      "./plugins/decode-google-services"
+    ],
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": [
+          "react-native-phone-number-input",
+          "jwt-decode"
+        ],
+        "listUnknownPackages": false
+      }
+    }
+  }
+}
